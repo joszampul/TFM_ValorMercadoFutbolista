@@ -1,0 +1,41 @@
+# TFM - Estimacion del valor de mercado de futbolistas
+# Instalar con:  pip install -r requirements.txt
+# Congelar despues con:  pip freeze > requirements-lock.txt
+
+# --- Entorno de trabajo ---
+jupyterlab
+ipykernel
+ipywidgets
+watermark
+
+# --- Datos ---
+pandas>=2.0
+numpy>=1.26
+pyarrow            # lectura/escritura de parquet para los checkpoints
+kagglehub          # descarga reproducible del dataset
+
+# --- Visualizacion ---
+matplotlib
+seaborn
+
+# --- Modelado ---
+scikit-learn>=1.4
+statsmodels        # OLS con diagnosticos, GLM Gamma, splines
+patsy              # formulas y splines naturales para la curva de edad
+xgboost
+lightgbm
+catboost
+
+# --- Deep learning tabular (modelo 5: MLP con embeddings) ---
+torch
+umap-learn         # proyeccion de los embeddings de club aprendidos
+
+# --- Interpretabilidad ---
+shap
+
+# --- Productivizacion ---
+joblib
+fastapi
+uvicorn
+streamlit
+pydantic>=2
